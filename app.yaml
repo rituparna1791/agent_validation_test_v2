@@ -1,8 +1,8 @@
+name: kpi-validation-agent
+
 command: ["streamlit", "run", "app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
 
 env:
-  # These are read by config.py.  Set them in the Databricks App UI under
-  # "Environment variables" so they are pre-filled when the app starts.
   # DATABRICKS_HOST is injected automatically by Databricks Apps — no need to set it.
   - name: SQL_WAREHOUSE_ID
     value: ""          # ← paste your SQL Warehouse ID here, e.g. abc123def456
